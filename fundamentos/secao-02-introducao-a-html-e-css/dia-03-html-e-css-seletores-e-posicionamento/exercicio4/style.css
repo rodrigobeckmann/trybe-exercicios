@@ -1,0 +1,63 @@
+div:hover {
+    border: 5px solid violet;
+}
+
+#div1 {
+    background-color: aqua;
+}
+
+#div2 {
+    background-color: magenta;
+}
+
+#div3 {
+    height: 100px;
+    background-color: papayawhip;
+}
+
+#div4 {
+    background-color: rosybrown;
+}
+
+#div5 {
+    background-color: forestgreen;
+}
+
+.himpar {
+    font-style: italic;
+}
+
+
+
+#ph {
+    color: brown;
+    font-size: 50px;
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#sh {
+    color: yellowgreen;
+    font-size: 40px;
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#th {
+    color: pink;
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#qh {
+    color: grey;
+    font-size: 20px;
+    font-family: monospace
+}
+
+#quih {
+    color: green;
+    font-size: 30px;
+    font-style: normal;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
