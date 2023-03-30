@@ -1,0 +1,16 @@
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+let saveOne = 0;
+let saveTwo = 0;
+
+for (let indexOne = 0; indexOne < numbers.length; indexOne++ ) {
+    for (let indexTwo = 0; indexTwo < numbers.length; indexTwo++) {
+        if (numbers[indexTwo] > numbers[indexTwo+1]) {
+            saveOne = numbers[indexTwo];
+            saveTwo = numbers[indexTwo+1];
+            numbers[indexTwo] = saveTwo;
+            numbers[indexTwo+1] = saveOne;
+        }
+    } 
+}
+
+console.log(numbers);
