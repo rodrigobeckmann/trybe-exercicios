@@ -35,14 +35,20 @@ let order = {
 };
 
 function customerInfo(order) {
-    console.log('Olá, ' + order.order.delivery.deliveryPerson + '. entrega para: ' + order.name + ', Telefone: ' + order.phoneNumber + ', R. ' + order.address.street + ', Nº: ' + order.address.number + ', AP: ' + order.address.apartment);
+    console.log('Olá, ' + order.order.delivery.deliveryPerson + '. entrega para: ' + order.name + ', Telefone: '
+        + order.phoneNumber + ', R. ' + order.address.street + ', Nº: ' + order.address.number + ', AP: ' + order.address.apartment);
 }
 
 customerInfo(order);
 
 function orderModifier(order) {
-   
-    console.log ('Olá, Luiz Silva, o valor total de seu pedido de marguerita, pepperoni e Coca-Cola Zero é R$ 50,00.');
+
+    order.name = 'Luiz Silva';
+    order.payment.total = 'R$ 50,00.'
+
+    console.log('Olá, ' + order.name + ', o valor total de seu pedido de ' + Object.keys(order.order.pizza)[0] + ', '
+        + Object.keys(order.order.pizza)[1] + ' e ' + order.order.drinks.coke.type + ' é ' + order.payment.total);
+
 }
 
 orderModifier(order);
