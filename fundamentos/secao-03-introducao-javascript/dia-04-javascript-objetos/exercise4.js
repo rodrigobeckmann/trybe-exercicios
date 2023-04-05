@@ -42,16 +42,31 @@ let allLessons = {
     lesson3: Object.assign({}, lesson3),
 } 
 
-console.log(allLessons);
+
 
 function qtdAlunosTotal(lesson) {
     let total = 0;
     let chaveAlunos = Object.keys(lesson);
 
-    for (let key in chaveAlunos) {
-        total +=
+    for (key in chaveAlunos) {
+        total += lesson[chaveAlunos[key]].numeroEstudantes;
     }
+    
+    return total;
 
 }
 
-console.log (qtdAlunosTotal(allLessons));
+
+
+const getValueByNumber = (lesson, number) => Object.values(lesson)[number];
+
+
+const verifyPair = (lesson, key, value) => ( Object.keys(lesson).indexOf(key) >= 0 && Object.values(lesson).indexOf(value) >= 0 ) ? true : false;
+
+
+console.log(verifyPair(lesson3, 'turno', 'noite'));
+// Output: true,
+console.log(verifyPair(lesson3, 'materia', 'Maria Clara'));
+// Output: false
+
+console.log (Object.values(lesson3).indexOf('Maria Clara'))
